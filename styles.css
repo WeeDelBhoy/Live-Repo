@@ -8,6 +8,13 @@ body {
     min-height: 100vh; /* Ensures the footer is at the bottom */
 }
 
+.body-of-text {
+    max-width: 700px; /* Set a maximum width for the main container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 90px; /* Add some padding to the sides */
+    text-align:center
+}
+
 header, footer {
     text-align: center;
     padding: 20px;
@@ -23,9 +30,9 @@ p {
 
 .mandela-effect-link {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    padding: 10px 20px;
+    bottom: 50px;
+    left: 10px;
+    padding: 10px;
     background-color: #d18802; /* Orange background color */
     color: #f5f5dc; 
     text-decoration: none;
@@ -37,6 +44,36 @@ p {
     background-color: #7b5001; /* Darker orange on hover - not working for some reason*/
 }
 
+.kitkat {
+    color: red;
+}
+
+.pokemon {
+    color: goldenrod;
+}
+
+.pikachu-tails {
+    position: absolute;
+    top: 30px; /* Position from the top */
+    right: 10px; /* Position from the right */
+    width: 190px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+  .Chocolate {
+    position: absolute;
+    top: 30px; /* Position from the top */
+    left: 10px; /* Position from the right */
+    width: 190px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  @media only screen and (max-width: 800px) {
+    .pikachu-tails, .Chocolate {
+      display: none; /* Hides the image when window is made smaller */
+    }
+  }
+  
 .start-quiz-button {
     display: block;
     width: 200px; /* Set the width of the button */
@@ -61,7 +98,7 @@ footer {
     /* margin: auto; */
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Style for the copyright text */
