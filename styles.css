@@ -1,47 +1,93 @@
+/* Style for mandela effect quiz */
 body {
-    background-color: #f5f5dc; /* Cream background */
-    color: #000080; /* Dark Blue text */
+    background-color: #f5f5dc;
+    color: #000080;
     font-family: Arial, sans-serif; /* Easy to read font */
     margin: 0;
     padding: 0;
     position: relative;
     min-height: 100vh; /* Ensures the footer is at the bottom */
+    border: 4px solid #000080; 
+    box-sizing: border-box;
 }
 
 .body-of-text {
-    max-width: 700px; /* Set a maximum width for the main container */
+    max-width: 70%;
     margin: 0 auto; /* Center the container horizontally */
-    padding: 0 90px; /* Add some padding to the sides */
-    text-align:center
+    padding: 2%;
+    text-align: center;
+}
+
+
+.nelson_text {
+    max-width: 70%;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 2%;
+    text-align: center;
+    color:rgb(1, 3, 5)
 }
 
 header, footer {
     text-align: center;
-    padding: 20px;
+    padding: 2% 0;
 }
 
-h1 {
-    font-size: 2em;
+h1, h2 {
+    font-size: 300%; /* Font size in percentage */
+    display: inline;
+
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 2em; /* Font size in percentage */
 }
 
 .mandela-effect-link {
     position: absolute;
-    bottom: 50px;
-    left: 10px;
-    padding: 10px;
+    bottom: 7%; /* Position from the bottom in percentage */
+    left: 2%; /* Position from the left in percentage */
+    padding: 2%; /* Padding in percentage */
     background-color: #d18802; /* Orange background color */
     color: #f5f5dc; 
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: background-color 0.3s;
+}
+
+.About_website {
+    position: absolute;
+    bottom: 7%; /* Position from the bottom in percentage */
+    right: 2%; /* Position from the left in percentage */
+    padding: 2%; /* Padding in percentage */
+    background-color: #d72c0a; /* Orange background color */
+    color: #f5f5dc; 
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.About_website:hover {
+background-color: #891902;
 }
 
 .mandela-effect-link:hover {
     background-color: #7b5001; /* Darker orange on hover - not working for some reason*/
+}
+
+.Home_Page {
+    position: absolute;
+    bottom: 9%; /* Position from the bottom in percentage */
+    left: 2%; /* Position from the left in percentage */
+    padding: 2%; /* Padding in percentage */
+    background-color: #03951b;
+    color: #f5f5dc; 
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.Home_Page-link:hover {
+    background-color: #014a0d;
 }
 
 .kitkat {
@@ -52,57 +98,144 @@ p {
     color: goldenrod;
 }
 
-.pikachu-tails {
+.pikachu-tails, .Chocolate {
     position: absolute;
-    top: 30px; /* Position from the top */
-    right: 10px; /* Position from the right */
-    width: 190px; /* Adjust width as needed */
+    width: 25%; /* Adjust width as needed in percentage */
     height: auto; /* Maintain aspect ratio */
+    top: 5%; /* Position from the top in percentage */
 }
 
-  .Chocolate {
-    position: absolute;
-    top: 30px; /* Position from the top */
-    left: 10px; /* Position from the right */
-    width: 190px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-  }
+.pikachu-tails {
+    right: 2%; /* Position from the right in percentage */
+    transform:rotate(12deg);
 
-  @media only screen and (max-width: 800px) {
-    .pikachu-tails, .Chocolate {
-      display: none; /* Hides the image when window is made smaller */
-    }
-  }
-  
+}
+
+.Chocolate {
+    left: 2%; /* Position from the left in percentage */
+    transform:rotate(-12deg);
+}
+
+.nelson {
+    position:fixed;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.3;
+    background-position:center;
+    background-size:cover;
+}
+.Fred {
+    position: absolute;
+    width: 28%; /* Adjust width as needed in percentage */
+    height: auto; /* Maintain aspect ratio */
+    left: 18%;
+    margin-top: -10%;
+}
+
+.Fred2, .Fred3 {
+    position: absolute;
+    width: 15%; /* Adjust width as needed in percentage */
+    height: auto; /* Maintain aspect ratio */
+    top: 5%; /* Position from the top in percentage */
+}
+
+.Fred2 {
+    right: 2%; /* Position from the right in percentage */
+    transform:rotate(10deg);
+
+}
+
+.Fred3 {
+    left: 2%; /* Position from the left in percentage */
+    transform:rotate(-10deg);
+}
+
+
 .start-quiz-button {
-    display: block;
-    width: 200px; /* Set the width of the button */
-    margin: 0 auto; /* Center the button horizontally */
-    padding: 10px 20px;
-    background-color: #000080; 
+    display: inline-block;
+    width: 20%; /* Set the width of the button in percentage */
+    margin: 12%; /* Center the button horizontally and add space between the button and the footer */
+    padding: 4%; /* Padding in percentage */
+    background-color: #06d003; 
     color: #f5f5dc; 
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 27px;
     transition: background-color 0.3s;
     text-align: center; /* Center the text horizontally */
 }
 
 .start-quiz-button:hover {
-    background-color: #010156; /* Darker blue on hover */
+    background-color: #03751a; /* Darker blue on hover */
 }
+
+ul {
+    list-style-type: none; /* Removes the bullet points next to answers */
+}
+
+.prev-question {
+    position: absolute;
+    top: 320px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
+    padding: 2%; /* Padding in percentage */
+    background-color: #e67700;
+    color: #f5f5dc; 
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.prev-question:hover {
+    background-color: #bc5f08;
+}
+.next-question {
+    position: absolute;
+    top: 320px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    padding: 2%; /* Padding in percentage */
+    background-color: #06bb7c;
+    color: #f5f5dc; 
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.next-question:hover {
+    background-color: #058f30;
+}
+
+#submit-btn {
+    position: absolute;
+    top: 320px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    padding: 2%; /* Padding in percentage */
+    background-color: #06bb7c;
+    color: #f5f5dc; 
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#submit-btn:hover {
+    background-color: #058f30;
+}
+
 
 footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    /* margin: auto; */
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 2%
 }
 
 /* Style for the copyright text */
 .copyright {
     font-size: 0.8em; /* Smaller font size than the rest */
     margin: auto;
+    margin-top: 15px; /* Add margin to separate from the line */
+    
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mandela Effect Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Mandela Effect Quiz</h1> 
+    </header>
+    <main class="body-of-text">
+        <h2>Final Score:</h2>
+        <p id="final-score" class="final-score"></p> <!-- Added this to display the final score -->
+        <a href="index.html" class="Home_Page">Home</a>
+        <a href="Question_10.html" class="prev-question">Previous Question</a>
+    </main>
+    
+    <footer>
+        <hr />
+        <p class="copyright">&copy; 2024 Dale Colman</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+    <script>
+        //Call displayFinalScore function when the page loads
+        window.onload = function() {
+            var finalScore = calculateScore();
+            displayFinalScore(finalScore);
+        };
+    </script>
+</body>
+</html>
