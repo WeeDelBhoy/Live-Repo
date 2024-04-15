@@ -7,9 +7,9 @@ var correctAnswers = {
     "q5": "Answer4",
     "q6": "Answer2",
     "q7": "Answer4",
-    "q8": "Answer4",
-    "q9": "Answer4",
-    "q10": "Answer4"
+    "q8": "Answer3",
+    "q9": "Answer3",
+    "q10": "Answer1"
 };
 
 //Function to calculate the score

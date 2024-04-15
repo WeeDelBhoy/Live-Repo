@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Mandela Effect Quiz</title>
+    <title>THE MANDELA EFFECT QUIZ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>The Mandela Effect Quiz</h1>
+        <h1>THE MANDELA EFFECT QUIZ</h1>
     </header>
     <main class="body-of-text">
         <!-- Question 10 content -->
         <h2>Question 10:</h2>
-        <p>Skechers or Sketchers?</p>
+        <p>In Oliver Twist, what did he actually say?</p>
         <ul>
-            <li><label><input type="radio" name="q10" value="Answer1" onchange="saveAnswer('q10', 'Answer1')">Option 1</label></li>
-            <li><label><input type="radio" name="q10" value="Answer2" onchange="saveAnswer('q10', 'Answer2')">Option 2</label></li>
-            <li><label><input type="radio" name="q10" value="Answer3" onchange="saveAnswer('q10', 'Answer3')">Option 3</label></li>
-            <li><label><input type="radio" name="q10" value="Answer4" onchange="saveAnswer('q10', 'Answer4')">Option 4</label></li>
+            <li><label><input type="radio" name="q10" value="Answer1" onchange="saveAnswer('q10', 'Answer1')">Please, sir, I want some more.</label></li>
+            <li><label><input type="radio" name="q10" value="Answer2" onchange="saveAnswer('q10', 'Answer2')">Please, sir, may I have some more?</label></li>
+            <li><label><input type="radio" name="q10" value="Answer3" onchange="saveAnswer('q10', 'Answer3')">Please, sir, can I have more?</label></li>
+            <li><label><input type="radio" name="q10" value="Answer4" onchange="saveAnswer('q10', 'Answer4')">Can I have more please, I'm peckish!</label></li>
         </ul>
         <a href="Question_9.html" class="prev-question">Previous Question</a>
+        <img src="oliver_twist.jpeg" class="Oliver_Twist">
         <button id="submit-btn">Submit</button>
     </main>
+    <audio id="dramatic_music" autoplay loop>
+        <source src="dramatic_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <footer>
         <hr />
         <p class="copyright">&copy; 2024 Dale Colman</p>

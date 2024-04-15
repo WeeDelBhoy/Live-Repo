@@ -1,23 +1,164 @@
 /* Style for mandela effect quiz */
+
+.index_text {
+    padding: 20px; /* Adjust padding */
+    text-align: left;
+    font-size: x-large;
+    margin-right: 30%;
+}
+
+.Answers_text {
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 70%; /* Adjust the max-width as needed */
+    margin: auto; /* Center the element horizontally */
+    text-align: left;
+    font-size: larger;
+    display: inline-block;
+    background-color: #f0f0f0; /* Light background color */
+    border-radius: 60px; /* Rounded corners */
+    box-shadow: 0 18px 12px rgba(0, 0, 0, 0.3); /* Heavier shadow */
+}
+
+
+.index_body {
+    background-color: #f5f5dc;
+    color: #000080;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    border: 4px solid #000080; 
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main_title {
+    text-align: left;
+    padding: 20px; /* Adjust padding */
+}
+
+.mandela-effect-link {
+    position: absolute;
+    bottom: 11%; /* Position from the bottom in percentage */
+    left: 2%; /* Position from the left in percentage */
+    padding: 2%; /* Padding in percentage */
+    background-color: #d18802; /* Orange background color */
+    color: #000000; 
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0 18px 12px rgba(0, 0, 0, 0.3);
+}
+
+.About_website {
+    position: absolute;
+    bottom: 11%; /* Position from the bottom in percentage */
+    right: 2%; /* Position from the left in percentage */
+    padding: 2%; /* Padding in percentage */
+    background-color: #d72c0a; /* Orange background color */
+    color: #000000; 
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0 18px 12px rgba(0, 0, 0, 0.3);
+}
+
+.About_website:hover {
+background-color: #891902;
+}
+
+.Answers {
+    position: absolute;
+    bottom: 9%; /* Position from the bottom in percentage */
+    right: 2%; /* Position from the left in percentage */
+    padding: 2%; /* Padding in percentage */
+    background-color: #f705d3;
+    color: #000000; 
+    text-decoration: none;
+    border-radius: 20px;
+
+}
+
+.Answers:hover {
+    background-color: #bc0288;
+    }
+
+.Home_Page_About {
+    position: absolute;
+    bottom: 9%; /* Position from the bottom in percentage */
+    right: 2%; /* Position from the left in percentage */
+    padding: 2%; /* Padding in percentage */
+    background-color: #03951b;
+    color: #000000; 
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0 18px 12px rgba(0, 0, 0, 0.3);
+}
+
+.Home_Page_About:hover {
+    background-color: #014a0d;
+}
+
+.Nelson_face {
+    position: fixed; /* Position the image relative to the viewport */
+    top: 47%; /* Move the top of the image to the vertical center */
+    right: 0; /* Move the left of the image to the horizontal center */
+    transform: translate(0%, -50%);
+    width: 36%;
+    z-index: -1; 
+}
+
+.start-quiz-button {
+    display: inline-block;
+    width: 20%; /* Set the width of the button in percentage */
+    margin: 20px, auto; /* Center the button horizontally and add space between the button and the footer */
+    padding: 20px; /* Padding in percentage */
+    background-color: #06d003; 
+    color: #000000; 
+    text-decoration: none;
+    border-radius: 27px;
+    transition: background-color 0.3s;
+    text-align: center; /* Center the text horizontally */
+    margin-left: 50%;
+    box-shadow: 0 18px 12px rgba(0, 0, 0, 0.3);
+}   
+
+.start-quiz-button:hover {
+    background-color: #03751a; /* Darker blue on hover */
+}
+
 body {
     background-color: #f5f5dc;
     color: #000080;
-    font-family: Arial, sans-serif; /* Easy to read font */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    position: relative;
-    min-height: 100vh; /* Ensures the footer is at the bottom */
+    min-height: 100vh;
     border: 4px solid #000080; 
     box-sizing: border-box;
+    position: relative;
 }
 
 .body-of-text {
-    max-width: 70%;
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 2%;
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 70%; /* Adjust the max-width as needed */
+    margin: auto; /* Center the element horizontally */
     text-align: center;
+    font-size: larger;
 }
 
+.About_text {
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 70%; /* Adjust the max-width as needed */
+    margin: auto; /* Center the element horizontally */
+    text-align: center;
+    font-size: larger;
+    background-color: #f0f0f0; /* Light background color */
+    border-radius: 60px; /* Rounded corners */
+    box-shadow: 0 18px 12px rgba(0, 0, 0, 0.3); /* Heavier shadow */
+    line-height: 1.5;
+}
 
 .nelson_text {
     max-width: 70%;
@@ -29,46 +170,32 @@ body {
 
 header, footer {
     text-align: center;
-    padding: 2% 0;
+    padding: 20px, 0;
 }
 
-h1, h2 {
-    font-size: 300%; /* Font size in percentage */
+
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
     display: inline;
-
+    background: linear-gradient(to right,#0080ff, #0000ff, #8000ff, #ff00ff, #ff0080); /* Adjust colors as needed */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Hide the text color */
+    animation: fade 1s ease-in forwards;
+    opacity: 0;
 }
 
-p {
-    font-size: 2em; /* Font size in percentage */
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.mandela-effect-link {
-    position: absolute;
-    bottom: 7%; /* Position from the bottom in percentage */
-    left: 2%; /* Position from the left in percentage */
-    padding: 2%; /* Padding in percentage */
-    background-color: #d18802; /* Orange background color */
-    color: #f5f5dc; 
-    text-decoration: none;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-}
-
-.About_website {
-    position: absolute;
-    bottom: 7%; /* Position from the bottom in percentage */
-    right: 2%; /* Position from the left in percentage */
-    padding: 2%; /* Padding in percentage */
-    background-color: #d72c0a; /* Orange background color */
-    color: #f5f5dc; 
-    text-decoration: none;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-}
-
-.About_website:hover {
-background-color: #891902;
-}
 
 .mandela-effect-link:hover {
     background-color: #7b5001; /* Darker orange on hover - not working for some reason*/
@@ -80,10 +207,11 @@ background-color: #891902;
     left: 2%; /* Position from the left in percentage */
     padding: 2%; /* Padding in percentage */
     background-color: #03951b;
-    color: #f5f5dc; 
+    color: #000000; 
     text-decoration: none;
     border-radius: 20px;
     transition: background-color 0.3s;
+    box-shadow: 0 18px 12px rgba(0, 0, 0, 0.3);
 }
 
 .Home_Page-link:hover {
@@ -111,9 +239,13 @@ background-color: #891902;
 
 }
 
+
 .Chocolate {
-    left: 2%; /* Position from the left in percentage */
-    transform:rotate(-12deg);
+    position: fixed; /* Position the image relative to the viewport */
+    top: 50%; /* Move the top of the image to the vertical center */
+    right: 0; /* Move the right of the image to the right edge */
+    transform: translate(0, -50%);
+    width: 25%; /* Adjust width as needed */
 }
 
 .nelson {
@@ -126,12 +258,13 @@ background-color: #891902;
     background-position:center;
     background-size:cover;
 }
+
 .Fred {
-    position: absolute;
-    width: 28%; /* Adjust width as needed in percentage */
+    position: relative;
+    width: 39%; /* Adjust width as needed in percentage */
     height: auto; /* Maintain aspect ratio */
-    left: 18%;
-    margin-top: -10%;
+    margin: 50px 50px;
+    margin-left: 490px;
 }
 
 .Fred2, .Fred3 {
@@ -152,23 +285,53 @@ background-color: #891902;
     transform:rotate(-10deg);
 }
 
+.tony_tiger {
+    position: absolute;
+    width: 25%; /* Adjust width as needed in percentage */
+    height: auto; /* Maintain aspect ratio */
+    top: 25%;
+    margin-left: 50px;
 
-.start-quiz-button {
-    display: inline-block;
-    width: 20%; /* Set the width of the button in percentage */
-    margin: 12%; /* Center the button horizontally and add space between the button and the footer */
-    padding: 4%; /* Padding in percentage */
-    background-color: #06d003; 
-    color: #f5f5dc; 
-    text-decoration: none;
-    border-radius: 27px;
-    transition: background-color 0.3s;
-    text-align: center; /* Center the text horizontally */
+}
+.Darth_Vader {
+    position: absolute;
+    max-width: 50%;
+    bottom: 50; 
+    left: 50%; /* Positions it horizontally centered */
+    transform: translateX(-50%); /* Centers it horizontally */
 }
 
-.start-quiz-button:hover {
-    background-color: #03751a; /* Darker blue on hover */
+@media (max-width: 768px) {
+    .Darth_Vader {
+        position: absolute;
+        max-width: 50%;
+        bottom: auto; /* Remove bottom positioning */
+        top: 70%; /* Position the GIF 50% from the top of the viewport */
+        left: 50%; /* Center the GIF horizontally */
+        transform: translate(-50%, -50%); /* Center the GIF vertically and horizontally */
+    }
 }
+
+.Cruella, .Snow_White, .Monopoly_gif, .Looney_gif, .Oliver_Twist {
+    position: relative;
+    width: 58%; /* Adjust width as needed in percentage */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center the image horizontally and add margin */
+    z-index: 1; /* Ensure it stays above other elements */
+}
+
+.Frosties {
+    position: relative;
+    width: 32%; /* Adjust width as needed in percentage */
+    height: auto; /* Maintain aspect ratio */
+    margin: 50px 50px;
+    margin-left: 520px;
+    z-index: 1; /* Ensure it stays above other elements */
+}
+.take_a_break {
+    width: 65%;
+}
+
 
 ul {
     list-style-type: none; /* Removes the bullet points next to answers */
@@ -176,51 +339,64 @@ ul {
 
 .prev-question {
     position: absolute;
-    top: 320px; /* Adjust the top position as needed */
-    left: 10px; /* Adjust the left position as needed */
-    padding: 2%; /* Padding in percentage */
-    background-color: #e67700;
-    color: #f5f5dc; 
+    top: 50%; /* Position at the vertical center */
+    left: 5%; /* Position at the left edge of the screen */
+    transform: translateY(-50%); /* Center vertically */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #e67700; /* Adjust background color as needed */
+    color: #000000; 
     text-decoration: none;
     border-radius: 20px;
     transition: background-color 0.3s;
+    box-shadow: 0 18px 12px rgba(0, 0, 0, 0.3);
 }
 
 .prev-question:hover {
-    background-color: #bc5f08;
+    background-color: #bc5f08; /* Adjust hover background color as needed */
 }
+
 .next-question {
     position: absolute;
-    top: 320px; /* Adjust the top position as needed */
-    right: 10px; /* Adjust the right position as needed */
-    padding: 2%; /* Padding in percentage */
-    background-color: #06bb7c;
-    color: #f5f5dc; 
+    top: 50%; /* Position at the vertical center */
+    right: 5%; /* Position at the right edge of the screen */
+    transform: translateY(-50%); /* Center vertically */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #06bb7c; /* Adjust background color as needed */
+    color: #000000; 
     text-decoration: none;
     border-radius: 20px;
     transition: background-color 0.3s;
+    box-shadow: 0 18px 12px rgba(0, 0, 0, 0.3);
 }
 
 .next-question:hover {
-    background-color: #058f30;
+    background-color: #058f30; /* Adjust hover background color as needed */
 }
+
 
 #submit-btn {
     position: absolute;
     top: 320px; /* Adjust the top position as needed */
     right: 10px; /* Adjust the right position as needed */
-    padding: 2%; /* Padding in percentage */
+    padding: 12px 24px; /* Adjust padding as needed */
     background-color: #06bb7c;
-    color: #f5f5dc; 
+    color: #020202; /* Change text color to white */
     text-decoration: none;
-    border-radius: 20px;
+    border: none; /* Remove border */
+    border-radius: 20px; /* Adjust border-radius as needed */
     transition: background-color 0.3s;
     cursor: pointer; /* Change cursor to pointer on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust box shadow */
+    font-size: 16px; /* Adjust font size */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 #submit-btn:hover {
     background-color: #058f30;
 }
+
 
 
 footer {
@@ -229,12 +405,13 @@ footer {
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 2%
+    padding: 10px 0;
 }
 
 /* Style for the copyright text */
 .copyright {
     font-size: 0.8em; /* Smaller font size than the rest */
+    color: #000000;
     margin: auto;
     margin-top: 15px; /* Add margin to separate from the line */
     
