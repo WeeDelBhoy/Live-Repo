@@ -1,4 +1,4 @@
-/* Style for mandela effect information */
+/* Style for mandela effect information page */
 
 
 .nelson_text {
@@ -25,10 +25,10 @@ p {
 
 .mandela-effect-link {
     position: absolute;
-    bottom: 7%; /* Position from the bottom in percentage */
-    left: 2%; /* Position from the left in percentage */
-    padding: 2%; /* Padding in percentage */
-    background-color: #d18802; /* Orange background color */
+    bottom: 7%;
+    left: 2%;
+    padding: 2%;
+    background-color: #d18802;
     color: #f5f5dc; 
     text-decoration: none;
     border-radius: 20px;
@@ -39,15 +39,15 @@ p {
     background-color: #7b5001; /* Darker orange on hover - not working for some reason*/
 }
 
-.nelson_text a {
-    color: #ffffff; /* Set the color of wiki link */
+.nelson_text a { /* Set the color of wiki link */
+    color: #ffffff; 
 }
 
 .Home_Page {
     position: absolute;
-    bottom: 9%; /* Position from the bottom in percentage */
-    right: 2%; /* Position from the left in percentage */
-    padding: 2%; /* Padding in percentage */
+    bottom: 9%;
+    right: 2%;
+    padding: 2%;
     background-color: #03951b;
     color: #f5f5dc; 
     text-decoration: none;

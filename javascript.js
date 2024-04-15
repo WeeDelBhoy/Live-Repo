@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
         link.addEventListener("click", function(event) {
             var currentQuestion = this.getAttribute("data-question");
             if (!isAnyRadioButtonChecked(currentQuestion)) {
-                event.preventDefault(); // Prevent following the link
+                event.preventDefault(); //Prevent following the link
                 alert("Please select an answer before proceeding to the next question.");
             }
         });
