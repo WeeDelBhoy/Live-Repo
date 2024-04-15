@@ -113,7 +113,7 @@ background-color: #891902;
 .start-quiz-button {
     display: inline-block;
     width: 20%; /* Set the width of the button in percentage */
-    margin: 20px 30%; /* Centers the button horizontally and add space between the button and the footer */
+    margin: 20px 70%; /* Centers the button horizontally and add space between the button and the footer */
     padding: 20px; 
     background-color: #06d003; 
     color: #000000; 
@@ -441,17 +441,20 @@ footer {
 
 .picture-container {
     display: flex;
-    justify-content: space-between; /* Distribute items evenly along the main axis */
+    justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     width: 100%;
     max-width: 500px;
     margin: 0 auto; /* Center the container horizontally */
     height: 200px;
+    padding-bottom: 40px;
 }
 
 .picture-container img {
-    max-width: 30%;
+    max-width: 60%;
     height: auto;
     margin: 0 5px; /* Add space horizontally between each image */
 }
+
+
 
