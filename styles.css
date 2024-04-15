@@ -113,7 +113,7 @@ background-color: #891902;
 .start-quiz-button {
     display: inline-block;
     width: 20%; /* Set the width of the button in percentage */
-    margin: 20px 70%; /* Centers the button horizontally and add space between the button and the footer */
+    margin: 20px 50%; /* Centers the button horizontally and add space between the button and the footer */
     padding: 20px; 
     background-color: #06d003; 
     color: #000000; 
